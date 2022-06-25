@@ -1,0 +1,56 @@
+
+------------------------------------------------GITHUB ---------------------------------------------------------------
+
+---- Jakimi poleceniami zbadałbyś status zmian w repozytorium git, 
+
+POLECENIE: 
+git status
+
+
+---- następnie dodał brakujące pliki(wszystkie), 
+
+POLECENIE: 
+git add .
+
+
+---- potwierdził 
+
+
+POLECENIE: 
+git commit -m "opis zmiany, nr ewidecyjny itp."
+
+---- i wysłał do zdalnego repozytorium(adres dowolny)?
+
+
+POLECENIE: 
+it remote add origin https://github.com/kaliINhad3s/zaliczenie_z_wybrane_narzedzia.git
+git push -u origin main
+
+
+------------------------------------------------- SQL ------------------------------------------------------------
+
+
+----- Dane sprzedaży kawy Latte i Long Black bez sprzedaży w Philadelfii -----------------------------------------
+
+SELECT
+*
+FROM Sales20192021
+WHERE Product='Latte' OR Product='Long Black' AND City<>'Philadelphia'
+
+ 
+	
+----- Kawy kupione przez william thompson_86 i mark taylor_113 --------------------------------------------------
+
+SELECT Product
+FROM Sales20192021
+WHERE Customer_ref='thompson_86' OR Customer_ref='mark taylor_11'
+
+
+
+----- Miasta gdzie zakupiono Capuccino i Flat White -------------------------------------------------------------
+
+SELECT City
+FROM Sales20192021
+WHERE Product='Capuccino' OR Product='Flat White'
+
+----------------------------------------------------------------------------------------------------------------
